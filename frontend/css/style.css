@@ -3,11 +3,7 @@ body {
     color: #3D3A33;
     font-family: Arial, sans-serif;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     min-height: 100vh;
-    padding: 2rem;
     box-sizing: border-box;
 }
 
@@ -76,4 +72,442 @@ button {
 
 button:hover {
     background-color: #95713F;
+}
+
+.topbar {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #D8D2C2;
+    padding: 18px 40px;
+}
+
+.brand {
+    font-family: Georgia;
+    font-size: 1.1rem;
+    color: #B08D57;
+    letter-spacing: 0.3px;
+}
+
+.page-container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.greeting-label {
+    font-size: 0.8rem;
+    color: #8A8270;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.dashboard-header h1 {
+    text-align: left;
+    font-size: 2.2rem;
+    margin: 0.3rem 0 0 0;
+}
+
+.primary-btn {
+    width: auto;
+    padding: 12px 22px;
+    background-color: #B08D57;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.primary-btn:hover {
+    background-color: #95713F;
+}
+
+.section-heading-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid #E0DACB;
+    padding-bottom: 0.8rem;
+}
+
+.groups-section h2 {
+    font-family: Georgia;
+    font-size: 1.15rem;
+    color: #3D3A33;
+    margin: 0;
+}
+
+.group-count {
+    font-size: 0.85rem;
+    color: #8A8270;
+}
+
+.groups-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.group-card {
+    background-color: #FFFFFF;
+    border: 1px solid #D8D2C2;
+    border-radius: 8px;
+    padding: 18px 22px;
+    cursor: pointer;
+    font-size: 1.02rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.group-card::after {
+    content: "→";
+    color: #B08D57;
+}
+
+.group-card:hover {
+    background-color: #F0EBDD;
+    transform: translateX(4px);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 3.5rem 1rem;
+    border: 1px dashed #D8D2C2;
+    border-radius: 8px;
+}
+
+.empty-state p {
+    font-family: Georgia;
+    font-size: 1.15rem;
+    color: #3D3A33;
+    margin-bottom: 0.4rem;
+}
+
+.empty-state span {
+    font-size: 0.9rem;
+    color: #8A8270;
+}
+.form-card {
+    background-color: #FFFFFF;
+    border: 1px solid #D8D2C2;
+    border-radius: 10px;
+    padding: 2rem;
+    max-width: 420px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-card label {
+    font-size: 0.85rem;
+    color: #8A8270;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    margin-top: 16px;
+}
+
+.form-card label:first-child {
+    margin-top: 0;
+}
+
+.form-card input,
+.form-card select {
+    padding: 10px 12px;
+    border: 1px solid #D8D2C2;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+    font-family: Arial, sans-serif;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+    border-color: #B08D57;
+}
+
+.form-card button {
+    margin-top: 1.5rem;
+}
+
+#splitAmongList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+#splitAmongList label {
+    text-transform: none;
+    font-size: 0.95rem;
+    color: #3D3A33;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+h2 {
+    font-family: Georgia;
+    font-size: 1.15rem;
+    color: #3D3A33;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#expenseHistory p,
+#paymentHistory p {
+    background-color: #FFFFFF;
+    border: 1px solid #D8D2C2;
+    border-radius: 6px;
+    padding: 12px 16px;
+    max-width: 500px;
+    margin: 0 auto 10px auto;
+    font-size: 0.95rem;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    color: #B08D57;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+input[type="checkbox"] {
+    accent-color: #B08D57;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.group-nav {
+    display: flex;
+    gap: 10px;
+    margin: 1.5rem 0 2.5rem 0;
+    flex-wrap: wrap;
+}
+
+.group-nav a {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #D8D2C2;
+    border-radius: 20px;
+    color: #3D3A33;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.group-nav a:hover {
+    background-color: #F0EBDD;
+    border-color: #B08D57;
+}
+
+.balance-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 0;
+    border-bottom: 1px solid #EDE7D8;
+}
+
+.balance-row:last-child {
+    border-bottom: none;
+}
+
+.member-name {
+    width: 70px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.balance-track {
+    position: relative;
+    flex: 1;
+    height: 10px;
+    background-color: #EDE7D8;
+    border-radius: 5px;
+}
+
+.balance-track::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    bottom: -5px;
+    width: 1px;
+    background-color: #C7BFA8;
+}
+
+.balance-fill {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.balance-fill.credit {
+    left: 50%;
+    background-color: #3F7858;
+}
+
+.balance-fill.debit {
+    right: 50%;
+    background-color: #A8462F;
+}
+
+.amount-credit, .amount-debit {
+    width: 90px;
+    text-align: right;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.amount-credit { color: #3F7858; }
+.amount-debit { color: #A8462F; }
+
+.settled-badge {
+    background-color: #C9952F;
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    width: 90px;
+    text-align: center;
+    display: inline-block;
+}
+
+.spent-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 0;
+}
+
+.spent-track {
+    flex: 1;
+    height: 8px;
+    background-color: #EDE7D8;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.spent-fill {
+    height: 100%;
+    background-color: #B08D57;
+    border-radius: 4px;
+}
+
+.spent-amount {
+    width: 90px;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.history-card {
+    background-color: #FFFFFF;
+    border: 1px solid #D8D2C2;
+    border-left: 4px solid #D8D2C2;
+    border-radius: 6px;
+    padding: 12px 16px;
+    max-width: 500px;
+    margin: 0 auto 10px auto;
+    font-size: 0.95rem;
+}
+
+.history-card.expense { border-left-color: #B08D57; }
+.history-card.payment { border-left-color: #3F7858; }
+.center-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(16, 43, 58, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modal-box {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-box h3 {
+    font-family: Georgia;
+    color: #3D3A33;
+    margin: 0 0 1rem 0;
+}
+
+.modal-box label {
+    font-size: 0.8rem;
+    color: #8A8270;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    margin-top: 12px;
+}
+
+.modal-box input {
+    padding: 10px 12px;
+    border: 1px solid #D8D2C2;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.modal-box input:focus {
+    border-color: #B08D57;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+.modal-actions button {
+    flex: 1;
+    margin: 0;
+}
+
+.secondary-btn {
+    padding: 10px;
+    background-color: #F0EBDD;
+    color: #3D3A33;
+    border: 1px solid #D8D2C2;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.secondary-btn:hover {
+    background-color: #E5DECB;
 }

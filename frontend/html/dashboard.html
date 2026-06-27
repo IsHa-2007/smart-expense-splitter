@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Smart Expense Splitter</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="topbar">
+        <span class="brand">Smart Expense Splitter</span>
+    </nav>
+
+    <div class="page-container">
+        <header class="dashboard-header">
+            <div>
+                <p class="greeting-label">Welcome back</p>
+                <h1 id="userName"></h1>
+            </div>
+            <button id="createGroupBtn" class="primary-btn">+ New Group</button>
+        </header>
+
+        <section class="groups-section">
+            <div class="section-heading-row">
+                <h2>Your Groups</h2>
+                <span id="groupCount" class="group-count"></span>
+            </div>
+
+            <div id="groupsList" class="groups-grid"></div>
+            <div id="emptyState" class="empty-state" style="display:none;">
+                <p>No groups yet</p>
+                <span>Create your first group to start splitting expenses</span>
+            </div>
+        </section>
+    </div>
+    <div id="groupModal" class="modal-overlay" style="display:none;">
+    <div class="modal-box">
+        <h3>Create New Group</h3>
+        <label>Group Name</label>
+        <input type="text" id="newGroupName" placeholder="e.g. Goa Trip">
+        <label>Members (comma-separated)</label>
+        <input type="text" id="newGroupMembers" placeholder="e.g. A, B, C">
+        <div class="modal-actions">
+            <button id="cancelGroupBtn" class="secondary-btn">Cancel</button>
+            <button id="confirmGroupBtn" class="primary-btn">Create</button>
+        </div>
+    </div>
+</div>
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

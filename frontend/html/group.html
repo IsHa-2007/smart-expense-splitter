@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Detail - Smart Expense Splitter</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="topbar">
+    <span class="brand">Smart Expense Splitter</span>
+</nav>
+
+    <div class="page-container">
+        <h1 id="groupTitle"></h1>
+
+        <div class="group-nav">
+            <a href="add-expense.html">+ Add Expense</a>
+            <a href="settle-up.html">Settle Up</a>
+            <a href="history.html">History</a>
+        </div>
+
+        <h2>Balances</h2>
+        <div id="balancesList"></div>
+
+        <h2>Total Spent</h2>
+        <div id="totalSpentList"></div>
+    </div>
+
+    <script src="../js/calculations.js"></script>
+    <script src="../js/group.js"></script>
+</body>
+</html>

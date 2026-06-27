@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense - Smart Expense Splitter</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Add Expense</h1>
+
+    <div class="form-card">
+        <label>Description</label>
+        <input type="text" id="description" placeholder="e.g. Hotel, Dinner">
+
+        <label>Amount</label>
+        <input type="number" id="amount" placeholder="0">
+
+        <label>Paid by</label>
+        <select id="paidBy"></select>
+
+        <label>Split among</label>
+        <div id="splitAmongList"></div>
+
+        <button id="saveExpenseBtn">Save Expense</button>
+    </div>
+
+    <a href="group.html">← Back to group</a>
+
+    <script src="../js/calculations.js"></script>
+    <script src="../js/expense.js"></script>
+</body>
+</html>

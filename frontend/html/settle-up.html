@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settle Up - Smart Expense Splitter</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h1>Settle Up</h1>
+
+    <div class="form-card">
+        <label>From (who is paying)</label>
+        <select id="fromSelect"></select>
+
+        <label>To (who receives)</label>
+        <select id="toSelect"></select>
+
+        <label>Amount</label>
+        <input type="number" id="amount" placeholder="0">
+
+        <button id="recordPaymentBtn">Record Payment</button>
+    </div>
+
+    <a href="group.html">← Back to group</a>
+
+    <script src="../js/calculations.js"></script>
+    <script src="../js/settle.js"></script>
+</body>
+</html>
